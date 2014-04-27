@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TAOOverlayHelp"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "Overlay HUD for showing help tips to controls on screen."
   s.description      = <<-DESC
                        Overlay HUD for showing help tips to controls on screen.
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.author           = { "Three Tall Guys" => "hi@threetallguys.com", "Or Sharir" => "or@threetallguys.com" }
   s.source           = { :git => "https://github.com/three-tall-guys/TAOOverlayHelp.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '7.0'
-  # s.ios.deployment_target = '7.0'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
   s.source_files = 'Classes'
