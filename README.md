@@ -5,7 +5,8 @@
 
  Overlay HUD for showing help tips to controls on screen.
  
- The control shows a semi-transparent overlay with a message and an arrow going from the message to a point on screen. The control can be dismissed by code, or by the user tapping the overlay.
+ The control shows a semi-transparent overlay with a message and an arrow going from the message to a point on screen.
+ The control can be dismissed by code, or by the user tapping the overlay.
  
 ![Screenshot](https://cloud.githubusercontent.com/assets/99543/2811277/2b5a35ac-ce12-11e3-9906-c333aee1be96.png)
 
@@ -36,8 +37,8 @@ it simply add the following line to your Podfile:
 
 ## Author
 
-Three Tall Guys Ltd, hi@threetallguys.com
-Or Sharir, or@threetallguys.com
+* Three Tall Guys Ltd, hi@threetallguys.com
+* Or Sharir, or@threetallguys.com
 
 ## License
 
