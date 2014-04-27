@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                        The control shows a semi-transparent overlay with a message and an arrow going from the message to a point on screen. The control can be dismissed by code, or by the user tapping the overlay.
                        DESC
   s.homepage         = "https://github.com/three-tall-guys/TAOOverlayHelp"
-  s.screenshots      = "https://cloud.githubusercontent.com/assets/99543/2811211/dcff19de-ce0e-11e3-8647-5405014bb594.png"
+  s.screenshots      = "https://cloud.githubusercontent.com/assets/99543/2811277/2b5a35ac-ce12-11e3-9906-c333aee1be96.png"
   s.license          = 'MIT'
   s.author           = { "Three Tall Guys" => "hi@threetallguys.com", "Or Sharir" => "or@threetallguys.com" }
   s.source           = { :git => "https://github.com/three-tall-guys/TAOOverlayHelp.git", :tag => s.version.to_s }
