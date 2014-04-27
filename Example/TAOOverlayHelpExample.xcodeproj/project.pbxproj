@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C955DB4190D00140011A979 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C955DB3190D00140011A979 /* Foundation.framework */; };
+		2C955DB6190D00140011A979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C955DB5190D00140011A979 /* CoreGraphics.framework */; };
+		2C955DB8190D00140011A979 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C955DB7190D00140011A979 /* UIKit.framework */; };
+		2C955DBE190D00140011A979 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C955DBC190D00140011A979 /* InfoPlist.strings */; };
+		2C955DC0190D00140011A979 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955DBF190D00140011A979 /* main.m */; };
+		2C955DC4190D00140011A979 /* TAOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955DC3190D00140011A979 /* TAOAppDelegate.m */; };
+		2C955DC7190D00140011A979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C955DC5190D00140011A979 /* Main.storyboard */; };
+		2C955DCA190D00140011A979 /* TAOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C955DC9190D00140011A979 /* TAOViewController.m */; };
+		2C955DCC190D00140011A979 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C955DCB190D00140011A979 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C955DB0190D00140011A979 /* TAOOverlayHelpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAOOverlayHelpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C955DB3190D00140011A979 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C955DB5190D00140011A979 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C955DB7190D00140011A979 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C955DBB190D00140011A979 /* TAOOverlayHelpExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAOOverlayHelpExample-Info.plist"; sourceTree = "<group>"; };
+		2C955DBD190D00140011A979 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C955DBF190D00140011A979 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C955DC1190D00140011A979 /* TAOOverlayHelpExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAOOverlayHelpExample-Prefix.pch"; sourceTree = "<group>"; };
+		2C955DC2190D00140011A979 /* TAOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAOAppDelegate.h; sourceTree = "<group>"; };
+		2C955DC3190D00140011A979 /* TAOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAOAppDelegate.m; sourceTree = "<group>"; };
+		2C955DC6190D00140011A979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C955DC8190D00140011A979 /* TAOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAOViewController.h; sourceTree = "<group>"; };
+		2C955DC9190D00140011A979 /* TAOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAOViewController.m; sourceTree = "<group>"; };
+		2C955DCB190D00140011A979 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C955DD2190D00140011A979 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C955DAD190D00140011A979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C955DB6190D00140011A979 /* CoreGraphics.framework in Frameworks */,
+				2C955DB8190D00140011A979 /* UIKit.framework in Frameworks */,
+				2C955DB4190D00140011A979 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C955DA7190D00140011A979 = {
+			isa = PBXGroup;
+			children = (
+				2C955DB9190D00140011A979 /* TAOOverlayHelpExample */,
+				2C955DB2190D00140011A979 /* Frameworks */,
+				2C955DB1190D00140011A979 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C955DB1190D00140011A979 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C955DB0190D00140011A979 /* TAOOverlayHelpExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C955DB2190D00140011A979 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C955DB3190D00140011A979 /* Foundation.framework */,
+				2C955DB5190D00140011A979 /* CoreGraphics.framework */,
+				2C955DB7190D00140011A979 /* UIKit.framework */,
+				2C955DD2190D00140011A979 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C955DB9190D00140011A979 /* TAOOverlayHelpExample */ = {
+			isa = PBXGroup;
+			children = (
+				2C955DC2190D00140011A979 /* TAOAppDelegate.h */,
+				2C955DC3190D00140011A979 /* TAOAppDelegate.m */,
+				2C955DC5190D00140011A979 /* Main.storyboard */,
+				2C955DC8190D00140011A979 /* TAOViewController.h */,
+				2C955DC9190D00140011A979 /* TAOViewController.m */,
+				2C955DCB190D00140011A979 /* Images.xcassets */,
+				2C955DBA190D00140011A979 /* Supporting Files */,
+			);
+			path = TAOOverlayHelpExample;
+			sourceTree = "<group>";
+		};
+		2C955DBA190D00140011A979 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C955DBB190D00140011A979 /* TAOOverlayHelpExample-Info.plist */,
+				2C955DBC190D00140011A979 /* InfoPlist.strings */,
+				2C955DBF190D00140011A979 /* main.m */,
+				2C955DC1190D00140011A979 /* TAOOverlayHelpExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C955DAF190D00140011A979 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C955DE2190D00140011A979 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				2C955DAC190D00140011A979 /* Sources */,
+				2C955DAD190D00140011A979 /* Frameworks */,
+				2C955DAE190D00140011A979 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = TAOOverlayHelpExample;
+			productReference = 2C955DB0190D00140011A979 /* TAOOverlayHelpExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C955DA8190D00140011A979 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TAO;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Three Tall Guys";
+			};
+			buildConfigurationList = 2C955DAB190D00140011A979 /* Build configuration list for PBXProject "TAOOverlayHelpExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C955DA7190D00140011A979;
+			productRefGroup = 2C955DB1190D00140011A979 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C955DAF190D00140011A979 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C955DAE190D00140011A979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C955DCC190D00140011A979 /* Images.xcassets in Resources */,
+				2C955DBE190D00140011A979 /* InfoPlist.strings in Resources */,
+				2C955DC7190D00140011A979 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C955DAC190D00140011A979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C955DCA190D00140011A979 /* TAOViewController.m in Sources */,
+				2C955DC0190D00140011A979 /* main.m in Sources */,
+				2C955DC4190D00140011A979 /* TAOAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C955DBC190D00140011A979 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C955DBD190D00140011A979 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C955DC5190D00140011A979 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C955DC6190D00140011A979 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C955DE0190D00140011A979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C955DE1190D00140011A979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C955DE3190D00140011A979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAOOverlayHelpExample/TAOOverlayHelpExample-Prefix.pch";
+				INFOPLIST_FILE = "TAOOverlayHelpExample/TAOOverlayHelpExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C955DE4190D00140011A979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAOOverlayHelpExample/TAOOverlayHelpExample-Prefix.pch";
+				INFOPLIST_FILE = "TAOOverlayHelpExample/TAOOverlayHelpExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C955DAB190D00140011A979 /* Build configuration list for PBXProject "TAOOverlayHelpExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C955DE0190D00140011A979 /* Debug */,
+				2C955DE1190D00140011A979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C955DE2190D00140011A979 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C955DE3190D00140011A979 /* Debug */,
+				2C955DE4190D00140011A979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C955DA8190D00140011A979 /* Project object */;
+}

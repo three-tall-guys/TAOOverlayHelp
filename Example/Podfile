@@ -1,0 +1,4 @@
+pod "TAOOverlayHelp", :path => "../"
+
+target "Demo" do
+end
