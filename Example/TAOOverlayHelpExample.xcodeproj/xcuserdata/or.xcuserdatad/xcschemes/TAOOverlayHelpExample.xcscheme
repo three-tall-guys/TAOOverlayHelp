@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C955DAF190D00140011A979"
-               BuildableName = "TAOOverlayHelpExample.app"
+               BuildableName = "Demo.app"
                BlueprintName = "Demo"
                ReferencedContainer = "container:TAOOverlayHelpExample.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C955DAF190D00140011A979"
-            BuildableName = "TAOOverlayHelpExample.app"
+            BuildableName = "Demo.app"
             BlueprintName = "Demo"
             ReferencedContainer = "container:TAOOverlayHelpExample.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C955DAF190D00140011A979"
-            BuildableName = "TAOOverlayHelpExample.app"
+            BuildableName = "Demo.app"
             BlueprintName = "Demo"
             ReferencedContainer = "container:TAOOverlayHelpExample.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C955DAF190D00140011A979"
-            BuildableName = "TAOOverlayHelpExample.app"
+            BuildableName = "Demo.app"
             BlueprintName = "Demo"
             ReferencedContainer = "container:TAOOverlayHelpExample.xcodeproj">
          </BuildableReference>

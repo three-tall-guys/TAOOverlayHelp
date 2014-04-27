@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A0482BB-259C-4391-91D7-0CB3BC83C255</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TAOOverlayHelpExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B089CC0-15F3-4AFE-B239-8917271CC922</key>
+		<string>https://github.com/three-tall-guys/TAOOverlayHelp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/TAOOverlayHelpExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B089CC0-15F3-4AFE-B239-8917271CC922</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/three-tall-guys/TAOOverlayHelp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B089CC0-15F3-4AFE-B239-8917271CC922</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B089CC0-15F3-4AFE-B239-8917271CC922</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TAOOverlayHelp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,9 +7,9 @@
 //
 
 #import "TAOViewController.h"
-
+#import <TAOOverlayHelp/TAOOverlayHelp.h>
 @interface TAOViewController ()
-
+-(IBAction)showHelp:(id)sender;
 @end
 
 @implementation TAOViewController
@@ -25,5 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)showHelp:(id)sender {
+    UIButton* button = sender;
+    [TAOOverlayHelp showWithHelpTip:@"Press this button to show a help tip for the user."
+                            pointAt:button.center didDismiss:NULL];
+}
 @end

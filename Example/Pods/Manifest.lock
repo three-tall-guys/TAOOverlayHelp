@@ -1,0 +1,14 @@
+PODS:
+  - TAOOverlayHelp (0.1.0)
+
+DEPENDENCIES:
+  - TAOOverlayHelp (from `../`)
+
+EXTERNAL SOURCES:
+  TAOOverlayHelp:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TAOOverlayHelp: 4672fce82d78147ea3350d51f410c410c4a65f58
+
+COCOAPODS: 0.32.1

@@ -11,9 +11,8 @@
 #import "CGPointExtension.h"
 @interface TAOOverlayHelp ()
 @property (strong, nonatomic) TAOArrowLayer* arrowLayer;
-@property (strong, nonatomic) UIView* darkView;
 @property (strong, nonatomic) UILabel * textLabel;
-@property (strong, nonatomic) TAOCompletionBlock didDismissBlock;
+@property (strong, nonatomic) TAOOverlayHelpCompletionBlock didDismissBlock;
 @property (strong, nonatomic) NSMutableArray* statusMessages;
 @property (strong, nonatomic) NSMutableArray* pointAtArray;
 @property (strong, nonatomic) NSMutableArray* didDismissBlockArray;
@@ -27,16 +26,10 @@
     if (self) {
         self.userInteractionEnabled = YES;
         self.alpha = 0;
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
         self.translatesAutoresizingMaskIntoConstraints = NO;
         [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
         [self setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
-        
-        self.darkView = [[UIView alloc] initWithFrame:self.bounds];
-        self.darkView.backgroundColor = [UIColor blackColor];
-        self.darkView.alpha = 0.6;
-        self.darkView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addSubview:self.darkView];
         
         self.textLabel = [[UILabel alloc] init];
         self.textLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -47,8 +40,6 @@
         self.textLabel.numberOfLines = 0;
         [self.textLabel setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
         [self.textLabel setContentCompressionResistancePriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
-//        self.textLabel.adjustsFontSizeToFitWidth = YES;
-//        self.textLabel.minimumScaleFactor = 0.5;
         [self addSubview:self.textLabel];
         
         
@@ -70,8 +61,6 @@
     return self;
 }
 - (void)updateConstraints {
-    [self addConstraints:[TAOOverlayHelp fillSuperviewConstraintsForView:self.darkView]];
-    
     NSLayoutConstraint* centerY = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
     NSLayoutConstraint* centerX = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
     NSLayoutConstraint* marginLeft = [NSLayoutConstraint constraintWithItem:self.textLabel attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:30];
@@ -112,7 +101,7 @@
         [self.superview addConstraints:[TAOOverlayHelp fillSuperviewConstraintsForView:self]];
     }
 }
-+ (NSString*)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOCompletionBlock)didDismissBlock{
++ (NSString*)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOOverlayHelpCompletionBlock)didDismissBlock{
     if (!status || status.length == 0) return nil;
     
     NSUInteger index = NSNotFound;
@@ -134,7 +123,7 @@
     [[self sharedView] showWithHelpTip:status pointAt:point didDismiss:didDismissBlock];
     return status;
 }
-- (void)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOCompletionBlock)didDismissBlock {
+- (void)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOOverlayHelpCompletionBlock)didDismissBlock {
     if(!self.superview){
         NSEnumerator *frontToBackWindows = [[[UIApplication sharedApplication]windows]reverseObjectEnumerator];
         
@@ -182,6 +171,7 @@
                              self.alpha = 1;
                          }
                          completion:^(BOOL finished){
+                             NSLog(@"%.2f", self.alpha);
                              UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
                              UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, status);
                          }];
@@ -222,7 +212,7 @@
     [[self sharedView].statusMessages removeLastObject];
     [[self sharedView].pointAtArray removeLastObject];
     [[self sharedView].didDismissBlockArray removeLastObject];
-    TAOCompletionBlock block = [self sharedView].didDismissBlock;
+    TAOOverlayHelpCompletionBlock block = [self sharedView].didDismissBlock;
     if (block) {
         [self sharedView].didDismissBlock = nil;
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -243,7 +233,7 @@
     [[self sharedView].statusMessages removeObjectAtIndex:index];
     [[self sharedView].pointAtArray removeObjectAtIndex:index];
     [[self sharedView].didDismissBlockArray removeObjectAtIndex:index];
-    TAOCompletionBlock block = [self sharedView].didDismissBlock;
+    TAOOverlayHelpCompletionBlock block = [self sharedView].didDismissBlock;
     if (block) {
         [self sharedView].didDismissBlock = nil;
         dispatch_async(dispatch_get_main_queue(), ^{

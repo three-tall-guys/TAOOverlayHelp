@@ -46,8 +46,4 @@
     self.arrowShape.lineJoin = kCALineJoinRound;
     self.arrowShape.lineCap = kCALineCapRound;
 }
-//- (void)display {
-//    [super display];
-//    [self updateDisplay];
-//}
 @end

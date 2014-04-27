@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^TAOOverlayHelpCompletionBlock)(void);
 @interface TAOOverlayHelp : UIView
-+ (NSString*)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOCompletionBlock)didDismissBlock;
++ (NSString*)showWithHelpTip:(NSString*)status pointAt:(CGPoint)point didDismiss:(TAOOverlayHelpCompletionBlock)didDismissBlock;
 + (void)dismiss;
 + (void)dismiss:(NSString*)key;
 + (BOOL)isVisible;

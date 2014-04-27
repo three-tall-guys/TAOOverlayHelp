@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="TAOViewController" sceneMemberID="viewController">
@@ -15,7 +15,75 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwI-dS-ZAm">
+                                <rect key="frame" x="20" y="38" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="dlD-5D-rLi"/>
+                                    <constraint firstAttribute="height" constant="30" id="xBR-E5-cve"/>
+                                </constraints>
+                                <state key="normal" title="Show Help 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHelp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XNz-hV-O1s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEE-3w-V0T">
+                                <rect key="frame" x="212" y="96" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="08z-ZG-a7s"/>
+                                    <constraint firstAttribute="width" constant="88" id="cvA-UH-ArO"/>
+                                </constraints>
+                                <state key="normal" title="Show Help 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHelp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eGd-y0-dsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-FT-hEq">
+                                <rect key="frame" x="212" y="518" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="55t-qj-vPy"/>
+                                    <constraint firstAttribute="width" constant="88" id="FVy-lo-0c8"/>
+                                </constraints>
+                                <state key="normal" title="Show Help 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHelp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vz9-Ch-bTd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-TZ-AIY">
+                                <rect key="frame" x="20" y="414" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="3Uj-pc-9bI"/>
+                                    <constraint firstAttribute="height" constant="30" id="3rE-2b-FJZ"/>
+                                </constraints>
+                                <state key="normal" title="Show Help 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHelp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qv0-5B-i04"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AwI-dS-ZAm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="4pb-Zg-pbY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dkc-TZ-AIY" secondAttribute="bottom" constant="124" id="7c3-Ce-T0Z"/>
+                            <constraint firstItem="dkc-TZ-AIY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="BcC-jE-DH1"/>
+                            <constraint firstAttribute="trailing" secondItem="Syl-FT-hEq" secondAttribute="trailing" constant="20" id="V87-mQ-rsf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Syl-FT-hEq" secondAttribute="bottom" constant="20" id="eLh-rQ-GaB"/>
+                            <constraint firstAttribute="trailing" secondItem="XEE-3w-V0T" secondAttribute="trailing" constant="20" id="ojL-1g-N9i"/>
+                            <constraint firstItem="XEE-3w-V0T" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="76" id="s6F-nt-kzK"/>
+                            <constraint firstItem="AwI-dS-ZAm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="wjc-Z4-Ndk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
