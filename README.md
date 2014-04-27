@@ -14,12 +14,13 @@
 To run the example project; clone the repo, and run `pod install` from the Example directory first. Than open the workspace of the project to run the example.
 
 To use in your projects, simply import "TAOverlayHelp.h", and call showWithHelpTip:pointAt:didDismiss: method of TAOOverlayHelp class like so:
-
-    [TAOOverlayHelp showWithHelpTip:@"Press here to add comments to this picture"
-                            pointAt:self.someButton.center
-                         didDismiss:^{
-        // Do something after user dismisses the help tip.
-    }];
+```objc
+[TAOOverlayHelp showWithHelpTip:@"Press here to add comments to this picture"
+                        pointAt:self.someButton.center
+                     didDismiss:^{
+    // Do something after user dismisses the help tip.
+}];
+```
 
 ## Requirements
 
