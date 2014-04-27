@@ -171,7 +171,6 @@
                              self.alpha = 1;
                          }
                          completion:^(BOOL finished){
-                             NSLog(@"%.2f", self.alpha);
                              UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
                              UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, status);
                          }];
